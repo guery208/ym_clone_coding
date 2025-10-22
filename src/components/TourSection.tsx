@@ -25,9 +25,6 @@ const TourSection: React.FC = () => {
         "투어/입장권",
     ];
 
-    // ✅ 초기 데이터 불러오기
-
-    // 나중에 여기서 실제 API 호출하면 됨
     // fetch(`/api/tours?category=${selectedCategory}`)
     //   .then((res) => res.json())
     //   .then((data) => {
@@ -35,7 +32,7 @@ const TourSection: React.FC = () => {
     //     setLoading(false);
     //   });
 
-    // ✅ 카테고리 변경 시 데이터 필터링
+    // 카테고리 변경  데이터 필터링
     useEffect(() => {
         if (tours.length > 0) {
             const filtered = tours.filter(

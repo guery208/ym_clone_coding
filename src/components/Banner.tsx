@@ -10,13 +10,12 @@ const banners = [
 ];
 
 const Banner: React.FC = () => {
-    const [index, setIndex] = useState(0); // 현재 시작 인덱스 (0~5)
+    const [index, setIndex] = useState(0);
 
     const next = () => setIndex((prev) => (prev + 1) % banners.length);
     const prev = () =>
         setIndex((prev) => (prev - 1 + banners.length) % banners.length);
 
-    // 현재 index 기준으로 2장의 배너 보여줌
     const visible = [banners[index], banners[(index + 1) % banners.length]];
 
     return (

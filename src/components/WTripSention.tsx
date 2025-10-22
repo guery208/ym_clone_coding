@@ -14,7 +14,6 @@ const WTripSection: React.FC = () => {
     const [loading, setLoading] = useState(true);
     const [startIndex, setStartIndex] = useState(0);
 
-    // ✅ 나중에 실제 API 연동 부분
     useEffect(() => {
         setLoading(true);
         // fetch("/api/wtrip")
@@ -25,7 +24,6 @@ const WTripSection: React.FC = () => {
         //   })
         //   .catch(() => setLoading(false));
 
-        // 현재는 더미 데이터 없음 (API 오면 자동 반영)
         setTimeout(() => setLoading(false), 1000);
     }, []);
 
