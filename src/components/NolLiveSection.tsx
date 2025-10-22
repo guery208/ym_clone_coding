@@ -33,7 +33,7 @@ const NolLiveSection: React.FC = () => {
     const visibleLives = lives.slice(startIndex, startIndex + 4);
 
     return (
-        <section className="relative w-full max-w-[1200px] mx-auto mt-20 px-4">
+        <section className="relative w-full max-w-[1200px] mx-auto mt-20 px-4 gap-5">
             <h2 className="text-2xl font-bold text-center text-sky-600 mb-1">
                 NOL live
             </h2>
